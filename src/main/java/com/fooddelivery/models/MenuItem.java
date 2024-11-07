@@ -1,3 +1,4 @@
+package com.fooddelivery.models; 
 public class MenuItem {
     private String name;
     private double price;

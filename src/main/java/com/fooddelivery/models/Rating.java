@@ -1,3 +1,7 @@
+package com.fooddelivery.models;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rating {
     private int ratingValue;
     private static final int MAX_RATINGS = 10;

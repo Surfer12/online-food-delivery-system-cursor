@@ -1,3 +1,4 @@
+package com.fooddelivery.models;
 public class Driver {
     private String name;
     private String location;

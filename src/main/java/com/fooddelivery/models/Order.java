@@ -45,4 +45,9 @@ public class Order {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public MenuItem[] getMenuItems() {
+        
+        throw new UnsupportedOperationException("Unimplemented method 'getMenuItems'");
+    }
 }

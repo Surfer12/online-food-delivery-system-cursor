@@ -1,4 +1,7 @@
 package com.fooddelivery.models;
+
+import java.util.List;
+
 public class Driver {
     private String name;
     private String location;
@@ -53,5 +56,15 @@ public class Driver {
             total += ratings[i];
         }
         return (double) total / ratingCount;
+    }
+
+    public List<Rating> getRatings() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRatings'");
+    }
+
+    public void setRatings(List<Rating> ratings2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setRatings'");
     }
 }

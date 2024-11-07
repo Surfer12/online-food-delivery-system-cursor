@@ -4,12 +4,15 @@ import com.fooddelivery.models.Order;
 import com.fooddelivery.models.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.Collections;
 
 public class OrderService {
+    // Use a thread-safe list
     private List<Order> orders;
 
     public OrderService() {
-        this.orders = new ArrayList<>();
+        this.orders = new CopyOnWriteArrayList<>();
     }
 
     public void placeOrder(Order order) {
@@ -25,7 +28,7 @@ public class OrderService {
     }
 
     public List<Order> getOrders() {
-        return orders;
+        return Collections.unmodifiableList(orders);
     }
 
     public void updateOrderStatus(Order order, String status) {

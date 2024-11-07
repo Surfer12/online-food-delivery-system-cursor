@@ -27,7 +27,7 @@ public class RatingService {
         List<Rating> ratings = driver.getRatings();
         int total = 0;
         for (Rating rating : ratings) {
-            total += rating.getValue();
+            total += rating.getRatingValue();
         }
         return (double) total / ratings.size();
     }
